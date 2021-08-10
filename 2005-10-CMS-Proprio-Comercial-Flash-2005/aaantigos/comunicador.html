@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Comunicador</title>
+</head>
+<body bgcolor="#ffffff" bottommargin="0" topmargin="0" leftmargin="0" rightmargin="0">
+<p> 
+  <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="300" height="200" id="comunicador" align="middle">
+    <param name="allowScriptAccess" value="sameDomain" />
+    <param name="movie" value="Comunicador.swf" />
+    <param name="quality" value="high" />
+    <param name="bgcolor" value="#ffffff" />
+    <embed src="Comunicador.swf" quality="high" bgcolor="#ffffff" width="300" height="200" name="comunicador" align="middle" allowscriptaccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" /> 
+  </object>
+</p>
+<p align="center"> 
+<script language="JavaScript">
+/*function inter(text) {
+	document.comunicador.SetVariable("varImgSelectedex", arquivoEscolhido);
+	document.Comunicador.SetVariable("penultimaPastex", penultimaPasta);
+	//document.Comunicador.SetVariable("varImgSel", text);
+	//document.Comunicador.SetVariable("penultimaPastex", penultimaPasta);
+	
+};*/
+function alertar() {
+	//window.document.Teste.SetVariable("oke", text);
+	//String
+	//Object
+	varImgSel = document.formTeste.imgescolhida.value;
+	
+	ultimaPastaNum = varImgSel.lastIndexOf("\\");
+	ultimaPasta = varImgSel.slice(0, ultimaPastaNum);
+	
+	//alert(ultimaPastaNum);
+	
+	tiradoispontoNum = ultimaPasta.lastIndexOf(":");
+	tiradoisponto = ultimaPasta.slice(tiradoispontoNum+2);
+	
+	//alert(tiradoisponto);
+
+	penultimaPastaNum = tiradoisponto.lastIndexOf("\\");
+	penultimaPasta = tiradoisponto.slice(penultimaPastaNum+1);
+	
+	arquivoEscolhido = varImgSel.slice(ultimaPastaNum+1);
+	document.comunicador.SetVariable("varImgSelectedex", arquivoEscolhido);
+	
+	document.comunicador.SetVariable("penultimaPastex", penultimaPasta);
+	document.comunicador.SetVariable("varImgSelectedex", arquivoEscolhido);
+}
+</script>
+<form name="formTeste">
+    <input type="file" value="Selecionar Imagem" onclick="pegaValue();" onchange="alertar()" name="imgescolhida" />
+	<!--input name="botao" type="button" onclick="alertar()" value="Alertar" /-->
+</form>
+</p>
+</body>
+</html>

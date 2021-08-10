@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<script language="JavaScript1.2" ID="Ex8">
+<!--
+function MM_wasAlreadyLoaded() {
+   var cData = unescape(document.cookie);
+   var name = "MM_debugDocURL";
+   var nStart = cData.indexOf(name);
+   var value='';
+   var vStart;
+   var vLength = unescape(document.URL).length;
+   var nameValue = name + "=" + unescape(document.URL);
+   if (nStart != -1)
+   {
+      vStart = nStart + "MM_debugDocURL".length + 1;
+      value = cData.substring(vStart, vStart + vLength);
+   }
+   if (value != unescape(document.URL))
+      document.cookie = nameValue;
+   return (value == unescape(document.URL));
+}
+function MM_Array_reverseFind(str) {
+   var i = this.length-1;
+   while(i>=0){
+      if(this[i]==str){break;}
+      else {i--;}
+   }
+   return i;
+}
+Array.prototype.reverseFind = MM_Array_reverseFind;
+function MM_connectDbg()
+{
+   if ( MM_wasAlreadyLoaded() ) return;
+   var canceled = false;
+   if ( confirm("Click OK),dreamweaver.latin1ToNative( para iniciar a depuração.") ) {
+      while ( !document.MM_jsDebug || !document.MM_jsDebug.isLoaded )
+         if ( !confirm("Aguarde até que o applet depurador do Dreamweaver seja carregado.\nClique em OK depois de dar a permissão para a execução do applet.") )
+         {   canceled = true; break; }
+   } else { canceled = true; }
+   try {
+      document.MM_jsDebug.connectDbg();
+      if ( canceled )
+         document.MM_jsDebug.disconnectDbg();
+   }
+   catch (e) {  }
+}
+function MM_sendDbg(cmd)
+{
+   var ret;
+   try { ret = document.MM_jsDebug.sendDbg(cmd); }
+   catch (e) { ret = 'continue'; }
+   return ret;
+}
+function MM_disconnectDbg()
+{
+   try { document.MM_jsDebug.disconnectDbg(); }
+   catch (e) {  }
+}
+//-->
+</script>
+<script language="JavaScript" src="MM_Debug.js"></script>
+<script language="JavaScript" src="MM_DebugIE.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title><Depurador>Comunicador</title>
+</head>
+<body bgcolor="#ffffff" leftmargin="0" topmargin="0" rightmargin="0" bottommargin="0" onunload=";MM_disconnectDbg();">
+<applet code="MM_IEApplet.class" 
+      width="1" height="1"
+      name="MM_jsDebug">
+  <param name="cabbase" value="MM_IEApplet.cab" />
+  <p> Aparentemente, Java está desativada (ou não foi instalada) no navegador. 
+    É necessário que Java esteja ativa, para que o depurador JavaScript possa 
+    ser utilizado. Ative VM Java (nas preferências do navegador ou na caixa de 
+    diálogo Opções da Internet) e reinicie o depurador. </p>
+</applet>
+<noscript>
+<p> Aparentemente, JavaScript (ou a criação de scripts) está desativada no navegador. 
+  JavaScript deve estar ativa, para que o depurador JavaScript possa ser utilizado. 
+  Ative a criação de scripts, (nas preferências do navegador ou na caixa de diálogo 
+  Opções da Internet) e reinicie o depurador. </p>
+</noscript>
+<script language="JavaScript1.2" id="Ex8">
+<!--
+MM_connectDbg();
+//-->
+</script>
+<script language="JavaScript">
+MM_bD=true;while(MM_bD&&!MM_bInEval){try{MM_bD=MM_Debug(eval(MM_D),'comunicador.html',2,190)}catch(e){MM_D='\''+MM_debugError+'\''};}
+</script>
+<p> 
+  <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="300" height="200" id="Comunicador" align="middle">
+    <param name="allowScriptAccess" value="sameDomain" />
+    <param name="movie" value="Comunicador.swf" />
+    <param name="quality" value="high" />
+    <param name="bgcolor" value="#ffffff" />
+    <embed src="Comunicador.swf" quality="high" bgcolor="#ffffff" width="300" height="200" name="Comunicador" align="middle" allowscriptaccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" /> 
+  </object>
+</p>
+<p align="center"> 
+  <script LANGUAGE='JavaScript'>
+function inter(text) {
+	//window.document.Teste.SetVariable("oke", text);
+	//String
+	//ultimaPastaNum = varImgSel.lastIndexOf("/");
+	//ultimaPasta = varImgSel.slice(0, ultimaPastaNum);
+	//penultimaPastaNum = ultimaPasta.lastIndexOf("/");
+	//penultimaPasta = varImgSel.slice(penultimaPastaNum+1);
+	{MM_Depth++};var MM_localVars = new Array('text');MM_bD=true;while(MM_bD&&!MM_bInEval){try{MM_bD=MM_Debug(eval(MM_D),'comunicador.html',27,1457)}catch(e){MM_D='\''+MM_debugError+'\''};}window.alert(penultimaPasta);
+	MM_bD=true;while(MM_bD&&!MM_bInEval){try{MM_bD=MM_Debug(eval(MM_D),'comunicador.html',28,1489)}catch(e){MM_D='\''+MM_debugError+'\''};}document.Comunicador.SetVariable("varImgSel", text);
+	MM_bD=true;while(MM_bD&&!MM_bInEval){try{MM_bD=MM_Debug(eval(MM_D),'comunicador.html',29,1544)}catch(e){MM_D='\''+MM_debugError+'\''};}document.Comunicador.SetVariable("penultimaPastex", penultimaPasta);
+	
+MM_bD=true;while(MM_bD&&!MM_bInEval){try{MM_bD=MM_Debug(eval(MM_D),'comunicador.html',31,1617)}catch(e){MM_D='\''+MM_debugError+'\''};}{MM_Depth--}};
+function alertar() {
+	//window.document.Teste.SetVariable("oke", text);
+	//String
+	{MM_Depth++};var MM_localVars = new Array();MM_bD=true;while(MM_bD&&!MM_bInEval){try{MM_bD=MM_Debug(eval(MM_D),'comunicador.html',35,1707)}catch(e){MM_D='\''+MM_debugError+'\''};}varImgSel = document.formTeste.imgescolhida;
+	MM_bD=true;while(MM_bD&&!MM_bInEval){try{MM_bD=MM_Debug(eval(MM_D),'comunicador.html',36,1754)}catch(e){MM_D='\''+MM_debugError+'\''};}ultimaPastaNum = varImgSel.lastIndexOf("/");
+	MM_bD=true;while(MM_bD&&!MM_bInEval){try{MM_bD=MM_Debug(eval(MM_D),'comunicador.html',37,1801)}catch(e){MM_D='\''+MM_debugError+'\''};}ultimaPasta = varImgSel.slice(0, ultimaPastaNum);
+	MM_bD=true;while(MM_bD&&!MM_bInEval){try{MM_bD=MM_Debug(eval(MM_D),'comunicador.html',38,1853)}catch(e){MM_D='\''+MM_debugError+'\''};}penultimaPastaNum = ultimaPasta.lastIndexOf("/");
+	MM_bD=true;while(MM_bD&&!MM_bInEval){try{MM_bD=MM_Debug(eval(MM_D),'comunicador.html',39,1905)}catch(e){MM_D='\''+MM_debugError+'\''};}penultimaPasta = varImgSel.slice(penultimaPastaNum+1);
+	MM_bD=true;while(MM_bD&&!MM_bInEval){try{MM_bD=MM_Debug(eval(MM_D),'comunicador.html',40,1962)}catch(e){MM_D='\''+MM_debugError+'\''};}window.alert(varImgSel);
+	//document.Comunicador.SetVariable("varImgSel", text);
+	//document.Comunicador.SetVariable("penultimaPastex", penultimaPasta);
+	
+MM_bD=true;while(MM_bD&&!MM_bInEval){try{MM_bD=MM_Debug(eval(MM_D),'comunicador.html',44,2121)}catch(e){MM_D='\''+MM_debugError+'\''};}{MM_Depth--}};
+</script>
+</p>
+<form name="formTeste">
+  <input type="file" value="Selecionar Imagem" onclick="MM_bD=true;while(MM_bD&&!MM_bInEval){try{MM_bD=MM_Debug(eval(MM_D),'comunicador.html',47,2219)}catch(e){MM_D='\''+MM_debugError+'\''};}pegaValue();" onchange="MM_bD=true;while(MM_bD&&!MM_bInEval){try{MM_bD=MM_Debug(eval(MM_D),'comunicador.html',47,2243)}catch(e){MM_D='\''+MM_debugError+'\''};}inter(this.value);" name="imgescolhida" />
+  <input name="botao" type="button" id="botao" onclick="MM_bD=true;while(MM_bD&&!MM_bInEval){try{MM_bD=MM_Debug(eval(MM_D),'comunicador.html',48,2342)}catch(e){MM_D='\''+MM_debugError+'\''};}alertar()" value="Alertar" />
+  <input type="button" onclick="MM_bD=true;while(MM_bD&&!MM_bInEval){try{MM_bD=MM_Debug(eval(MM_D),'comunicador.html',49,2404)}catch(e){MM_D='\''+MM_debugError+'\''};}alertar();" />
+</form>
+<p></p>
+</body>
+</html>
